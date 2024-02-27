@@ -1,0 +1,182 @@
+.bgr {
+    width: 100%;
+    height: 550px;
+    background-image: url(.png);
+}
+.card p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #666;
+
+  }
+  
+  .card p.small {
+    font-size: 14px;
+  }
+  .card1 {
+    display: block;
+    position: relative;
+    max-width: 1000px;
+    background-color: #83dbeb;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    left: 7%;
+  }
+  
+  .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #1795fc;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card1:hover:before {
+    transform: scale(100);
+  }
+  
+  .card1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+  }
+  
+  .card2 {
+    display: block;
+    position: relative;
+    max-width: 1000px;
+    background-color: #83dbeb;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    left: 7%;
+  }
+  
+  .card2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #ddf12b;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card2:hover:before {
+    transform: scale(100);
+  }
+  
+  .card2:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(108, 101, 101, 0.8);
+  }
+  
+  .card2:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+  }
+
+  .card3 {
+    display: block;
+    position: relative;
+    max-width: 1000px;
+    background-color: #83dbeb;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    left: 7%;
+  }
+  
+  .card3:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #f331f0;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card3:hover:before {
+    transform: scale(100);
+  }
+  
+  .card3:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(241, 234, 234, 0.8);
+  }
+  
+  .card3:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+  }
+
+  .footer {
+    position: relative;
+    width: 250px;
+   /*  choose your size */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    left: 10%;
+  }
+  
+  .footer button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #e2ebef;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 26px;
+    height: 26px;
+    fill: #0968f7;
+  }
+  .icon1 {
+    width: 26px;
+    height: 26px;
+    fill: #f70909;
+  }
+  .icon2 {
+    width: 26px;
+    height: 26px;
+    fill: hsl(198, 94%, 50%);
+  }
+  
+  
+  

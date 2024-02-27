@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-image: url("back-ground.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            transform: scale(1.2);
+            /* Scale the image on hover */
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            /* padding: 30px; */
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 100%;
+            max-width: 50%;
+            margin: 0 auto;
+            position: relative;
+            animation: fadeInUp 1s ease both;
+            height: 500px;
+            margin-top: 70px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            transform: scale(1.2);
+            /* Scale the image on hover */
+
+            /* Apply infinite bouncing animation */
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 80px;
+            background-color: rgb(240, 229, 69);
+            color: rgb(38, 223, 24);
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 40px;
+            transition: background-color 0.3s ease;
+            animation: fadeInRight 1s ease both;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+            transform: scale(1.2);
+            /* Scale the image on hover */
+        }
+
+        .blank {
+            width: 70%;
+            padding: 10px;
+            font-size: 15px;
+            transition: border-color 0.3s;
+            margin: 10px auto;
+            /* Center the input horizontally with auto margins */
+            display: block;
+            /* Make the input a block element to apply margin auto */
+            text-align: center;
+            /* Center the text within the input box */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            transform: scale(1.2);
+            /* Scale the image on hover */
+        }
+
+        .label {
+            font-size: 33px;
+            color: #3680ca;
+            animation: bounce 1s infinite;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            transform: scale(1.2);
+            /* Scale the image on hover */
+        }
+
+        .next-button {
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            transform: scale(1.2);
+            /* Scale the image on hover */
+            text-decoration: none;
+        }
+
+        p {
+            font-size: 25px;
+        }
+
+        .signup {
+            text-decoration: none;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        body {
+            background-image: url('retrieve_images.php?id=19');
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="title">Login to Your Account</h2>
+        <form action="login.php" method="POST">
+            <label class="label" for="username">Username:</label>
+            <input class="blank" type="text" id="username" name="username" required><br><br>
+
+            <label class="label" for="password">Password:</label>
+            <input class="blank" type="password" id="password" name="password" required><br><br>
+
+            <input class="next-button" type="submit" value="Login">
+            <p>Don't have an account? <a class="signup" href="register.html">Sign Up</a></p>
+            <!-- Link to registration page -->
+        </form>
+    </div>
+</body>
+
+</html>

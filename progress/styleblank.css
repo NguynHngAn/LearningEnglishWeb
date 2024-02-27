@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    /* Use flexbox to center the container */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 100vh;
+    /* Take the full viewport height */
+    background-image: url("back-ground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    width: 90%;
+    height: 300px;
+    padding: 40px 60px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    /* Center the contents of the container */
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    animation: fadeInUp 1s ease both;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 30px;
+    margin-top: 10px;
+    transition: border-color 0.3s;
+    margin: 10px auto;
+    /* Center the input horizontally with auto margins */
+    display: block;
+    /* Make the input a block element to apply margin auto */
+    text-align: center;
+    /* Center the text within the input box */
+}
+
+#result {
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: opacity 0.3s;
+}
+
+.hidden {
+    display: none;
+}
+
+.next-button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.next-button:hover {
+    background-color: #f57c00;
+    transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.top-left-info,
+.top-right-info {
+    position: absolute;
+    top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: rgb(235, 122, 17);
+    /* Add transition effect */
+}
+
+.top-left-info:hover,
+.top-right-info:hover {
+    color: #ff9800;
+    /* Change color on hover */
+    transform: scale(1.1);
+    /* Add scaling effect on hover */
+}
+
+.top-left-info {
+    left: 20px;
+}
+
+.top-right-info {
+    right: 20px;
+}
+
+#result {
+    font-size: 24px;
+    /* Increase font size */
+    font-weight: bold;
+    /* Make it bold */
+    color: #2ecc71;
+    /* Change color to a shade of green */
+    margin-top: 20px;
+    /* Add a bit more spacing */
+    transition: opacity 0.3s;
+}
+
+.question {
+    font-size: 36px;
+    color: #3680ca;
+    animation: bounce 1s infinite;
+    margin-bottom: 50px;
+}
+

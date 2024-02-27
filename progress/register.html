@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Account Registration</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+
+            background-image: url('retrieve_images.php?id=19');
+        }
+
+        .container_registration {
+            background-color: rgba(255, 255, 255, 0.9);
+            /* padding: 30px; */
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 90%;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            animation: fadeInUp 1s ease both;
+            height: 670px;
+            margin-top: 70px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+
+            /* Apply infinite bouncing animation */
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 80px;
+            background-color: rgb(240, 229, 69);
+            color: rgb(38, 223, 24);
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 40px;
+            transition: background-color 0.3s ease;
+            animation: fadeInRight 1s ease both;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+
+        }
+
+        .blank {
+            width: 90%;
+            padding: 8px;
+            font-size: 20px;
+            transition: border-color 0.3s;
+            margin: 0px auto;
+            /* Center the input horizontally with auto margins */
+            display: block;
+            /* Make the input a block element to apply margin auto */
+            text-align: center;
+            /* Center the text within the input box */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+        }
+
+        .label {
+            font-size: 36px;
+            color: #3680ca;
+            animation: bounce 1s infinite;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+        }
+
+        .next-button {
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 21px;
+            text-decoration: none;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            transform: scale(1.2);
+            /* Scale the image on hover */
+            margin-top: 30px;
+        }
+
+        .next-button:hover {
+            color: #3680ca;
+        }
+
+        p {
+            font-size: 25px;
+        }
+
+        .signup {
+            text-decoration: none;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container_registration">
+        <h2 class="title">Create an Account</h2>
+        <form id="registration-form" action="register.php" method="POST">
+            <div class="form-group">
+                <label class="label" for="username">Username:</label>
+                <input class="blank" type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label class="label" for="email">Email:</label>
+                <input class="blank" type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label class="label" for="full-name">Full Name:</label>
+                <input class="blank" type="text" id="full-name" name="full_name" required>
+            </div>
+            <div class="form-group">
+                <label class="label" for="dob">Date of Birth:</label>
+                <input class="blank" type="date" id="dob" name="date_of_birth" required>
+            </div>
+            <div class="form-group">
+                <label class="label" for="password">Password:</label>
+                <input class="blank" type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="next-button">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+</body>
+
+</html>
